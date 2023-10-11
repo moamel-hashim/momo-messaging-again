@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,600;0,700;0,800;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Roboto:wght@300;400;500;700;900&display=swap');
+body {
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+.floating-label {
+  font-style: italic;
+  transition: transform 0.3s ease-out;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: left top;
+}
+
+.upload > label {
+  pointer-events: all;
+  cursor: pointer;
+}
+
+input:focus + label,
+input:valid + label{
+  transform: translateY(-15px);
+}
+
+.button:hover {
+  background-color: #383e27;
+}
+
+
+.search-input::placeholder {
+  font-style: italic;
+  font-weight: 400;
+  font-size: medium;
+}
+
+
+.hover-chats {
+  transition: 0.5s;
+}
+
+.hover-chats:hover {
+  background-color: #444c28;
+}
